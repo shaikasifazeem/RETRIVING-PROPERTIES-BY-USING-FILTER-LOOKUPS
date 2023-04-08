@@ -1,0 +1,16 @@
+body
+{
+    background-color: rgb(243, 135, 34);
+}
+th
+{
+   color: chartreuse; 
+}
+tr
+{
+    color: yellow;
+}
+td
+{
+    background-color: red;
+}

@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/c1.css' %}">
+</head>
+<body>
+     <h1>THIS IS EMP TABLE </h1>
+     <center>
+        <h1>EMP</h1>
+        <table border="4px">
+            <tr>
+                <th>EMPNO</th>
+                <th>ENAME</th>
+                <th>ESAL</th>
+                <th>MGR</th>
+                <th>HIREDATE</th>
+                <th>COMM</th>
+                <th>DEPTNO</th>
+                {% for i in EMPS %}
+                <tr>
+                    <td>{{i.EMPNO}} </td>
+                    <td>{{i.ENAME}} </td>
+                    <td>{{i.ESAL}} </td>
+                    <td>{{i.MGR}}</td>
+                    <td>{{i.HIREDATE}} </td>
+                    <td>{{i.COMM }}</td>
+                    <td>{{i.DEPTNO.DEPTNO}} </td>
+                </tr>
+                {% endfor %}
+            </tr>
+        </table>
+     </center>
+
+    
+</body>
+</html>
