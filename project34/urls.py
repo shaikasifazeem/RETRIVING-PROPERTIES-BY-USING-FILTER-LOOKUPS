@@ -21,4 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('D_NAME/',D_NAME,name='D_NAME'),
     path('E_NAME/',E_NAME,name='E_NAME'),
+    path('update_display/',update_display,name='update_display'),
+    path('delete/',delete,name='delete'),
+    path('update_emp/',update_emp,name='update_emp'),
 ]
