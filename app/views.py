@@ -68,10 +68,9 @@ def update_display(request):
      DOT=DEPT.objects.update_or_create(DLOC='GORANTLA',defaults={'DLOC':'NEW YOURK'})
 
      return render(request,'display.html')
-def delete(request):
-    DOT=DEPT.objects.filter(DEPTNO=50).delete()
-    DOT=DEPT.objects.filter(DNAME='SALES').delete()
-    return render(request,'display.html')
+
+
+
 def update_emp(request):
 
     EOT=EMP.objects.filter(ENAME='JONES').update(ENAME='ASIF')
@@ -86,5 +85,17 @@ def update_emp(request):
     # EOT=EMP.objects.all()
 
     return render(request,'display1.html')
+def delete(request):
+    # DOT=DEPT.objects.filter(DEPTNO=50).delete()
+    # DOT=DEPT.objects.filter(DNAME='SALES').delete()
+    # DOT=EMP.objects.filter(EMPNO=7566).delete()
+    # DOT=EMP.objects.all().delete()
+    # DEPT.objects.filter(DEPTNO=10).delete()
+    # DEPT.objects.filter(DEPTNO=40).delete()
+    # DEPT.objects.filter(DEPTNO=20).delete()
+
+
+
+    return render(request,'display.html')
 
 

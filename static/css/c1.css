@@ -13,4 +13,13 @@ tr
 td
 {
     background-color: red;
+
+}
+h1
+{
+    background-color: aqua;
+    color: chartreuse;
+    font-style: italic;
+    font-weight: 800;
+    font-smooth: revert;
 }
